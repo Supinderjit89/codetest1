@@ -16,7 +16,7 @@ class App extends Component {
       <>
         <div className="App">
           <div className="grid">
-            <h1>Hello</h1>
+            <h1>Hello world</h1>
           </div>
           <hr></hr>
           <div className="grid1">
