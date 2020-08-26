@@ -1,0 +1,22 @@
+[
+    {
+        "itemId":"1",
+        "itemName":"Box1",
+        "itemColor":"White"
+    },
+    {
+        "itemId":"2",
+        "itemName":"Box",
+        "itemColor":"Red"
+    },
+    {
+        "itemId":"3",
+        "itemName":"Box1",
+        "itemColor":"White"
+    },
+    {
+        "itemId":"4",
+        "itemName":"Box",
+        "itemColor":"Red"
+    }
+]
