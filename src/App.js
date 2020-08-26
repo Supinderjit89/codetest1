@@ -20,19 +20,20 @@ class App extends Component {
       searchItem: [],
     };
     this.handleChange = this.handleChange.bind(this);
-    this.Items = data;
+    this.Items = [...data];
   }
   handleChange(e) {
     this.setState({
-      searchText: e.target.value,
+      searchText: e.target.value.toLowerCase(),
+
     });
   }
 
   render() {
     const searchItems = this.Items.filter((b) =>
-      b.itemName.includes(this.state.searchText)
+      b.itemName.toLowerCase().includes(this.state.searchText)
     );
-
+console.log(searchItems)
     return (
       <>
         <div className="App">
@@ -74,7 +75,7 @@ class App extends Component {
         </div>
         <div className="cbGroup">
           {searchItems.map((item) => (
-            <div  className="grid3" key={item.itemName}>
+            <div  className="grid3" key={item.itemId}>
               <p>{item.itemName}</p>
               
             </div>

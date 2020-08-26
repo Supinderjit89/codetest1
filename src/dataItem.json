@@ -1,12 +1,12 @@
 [
     {
         "itemId":"1",
-        "itemName":"Box1",
+        "itemName":"box1",
         "itemColor":"White"
     },
     {
         "itemId":"2",
-        "itemName":"Box",
+        "itemName":"box",
         "itemColor":"Red"
     },
     {
