@@ -11,6 +11,9 @@ import "./App.css";
 import { TextField } from "@material-ui/core";
 import data from "./dataItem.json";
 //import image from './image';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
+
 
 class App extends Component {
   constructor(props) {
@@ -34,22 +37,26 @@ class App extends Component {
       b.title.toLowerCase().includes(this.state.searchText)
     );
     console.log(searchItems);
+
+
+  
+
     return (
       <>
         <div className="App">
           <div className="grid">
-            <h1><u>Learn Web Development and Computer Fundamentals</u></h1>
+            <h3><u>Learn Web Development and Computer Fundamentals</u></h3>
           </div>
-          <hr></hr>
+        
           <div className="grid1">
-            <TextField
+              <TextField
               width="350px"
               placeholder="Search here"
               addonafter=""
               onChange={this.handleChange}
             />
-            <SearchIcon height="20px" width="20px" />
-             <h5>Login or Sign Up</h5>
+            <SearchIcon height="20px" width="20px" /><br/>
+             <h7>Login or Sign Up</h7>
           </div>
         </div>
         <div className="cbGroup">
@@ -79,19 +86,23 @@ class App extends Component {
             <div className="grid3" key={item.courseId}>
               <div className="title">
                 {" "}
-                <h4>
-                  <u>{item.title}</u>
-                </h4>
+                <h6>
+                  <b><u>{item.title}</u></b>
+                </h6>
               </div>
               <div className="image">
                 <img src={item.imgUrl} />
               </div>
               <p>{item.shortDescription}</p>
-              <a href={item.url}>Link here....</a>
+              <a href={item.url} className="alink">Link here....</a>
             </div>
           ))}
         </div>
         <div className="footer"></div>
+
+    
+
+        
       </>
     );
   }

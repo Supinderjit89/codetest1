@@ -50,8 +50,9 @@
 
 .grid
 {
-  
+  padding-top:4%;
   width: 80%; 
+  padding-left:10% ;
 
 }
 .grid1{
@@ -91,10 +92,10 @@
 .maingird{
   margin-left:10%;
 
-  width: 82%;
+  width: 80%;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap:40px 40px;
+  grid-gap:30px 30px;
   margin-top: 1%;
  
 }
@@ -111,19 +112,25 @@
 .image{
   
   height: 200px;
+  margin-top:5% ;
   
 }
 img{
   width:100%;
+  
 
   
 }
 p{
   text-align: justify;
 }
-.title h4{
+.title{
   
-  height:7%;
+  height:80px;
+  width:320px;
+  background-color:lightgray;
+  padding: 5%;
+  
   
 }
 
@@ -137,4 +144,7 @@ p{
   display: flex;
   margin-top: 2%;
   opacity: .5;
+}
+.alink{
+  margin-top:3%
 }
