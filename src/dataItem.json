@@ -1,22 +1,108 @@
 [
     {
-        "itemId":"1",
-        "itemName":"box1",
-        "itemColor":"White"
+      "courseId": 1,
+      "title": "Aws Developer Getting Started",
+      "shortDescription": "Developing high-performance web applications in the real world requires the use of a cloud provider, and Amazon Web Services is widely recognized as the leader in cloud technology. In this course, AWS Developer: Getting Started, you will learn how to develop applications that utilize many of...",
+      "url": "https://www.pluralsight.com/courses/aws-developer-getting-started",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/aws-developer-getting-started-v1.jpg"
     },
     {
-        "itemId":"2",
-        "itemName":"box",
-        "itemColor":"Red"
+      "courseId": 2,
+      "title": "Understanding Machine Learning",
+      "shortDescription": "Hello! My name is David Chappell, and I'm the author of Understanding Machine Learning here at Pluralsight. Have you ever wondered what machine learning is? That’s what this course is designed to teach you. You’ll explore the open source programming language R, learn about training and testing...",
+      "url": "https://www.pluralsight.com/courses/understanding-machine-learning",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/understanding-machine-learning-v1.jpg"
     },
     {
-        "itemId":"3",
-        "itemName":"Box1",
-        "itemColor":"White"
+      "courseId": 3,
+      "title": "Creating A Mobile Puzzle Game In Unity",
+      "shortDescription": "In this Unity tutorial we'll learn how to create a puzzle game for mobile devices. This tutorial focuses on the approach and coding aspect of a multi-level puzzle game. We'll address how to create the gameplay, a simple UI, level editor, and saving and loading levels from an external XML. By...",
+      "url": "https://www.pluralsight.com/courses/mobile-puzzle-game-unity-1999",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/mobile-puzzle-game-unity-1999-v1.jpg"
     },
     {
-        "itemId":"4",
-        "itemName":"Box",
-        "itemColor":"Red"
+      "courseId": 4,
+      "title": "Hardware For Comptia A 220 901",
+      "shortDescription": "In this course, we perform a comprehensive survey of all interior and external personal computer (PC) hardware. The subject matter maps to every objective in the Hardware domain of the CompTIA A+ 220-901 certification exam. This is the second course in a series of five courses to prepare you...",
+      "url": "https://www.pluralsight.com/courses/hardware-comptia-a-plus-220-901",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/hardware-comptia-a-plus-220-901-v1.jpg"
+    },
+    {
+      "courseId": 5,
+      "title": "Quick Start To Javascript Volume 1",
+      "shortDescription": "Throughout this series of JavaScript tutorials we'll learn how to write the programming language from scratch, so you can start creating code of your own. Quick Starts are a series of specially constructed tutorials meant to be followed in sequence and include valuable exercises to reinforce...",
+      "url": "https://www.pluralsight.com/courses/quick-start-javascript-1-1870",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/quick-start-javascript-1-1870-v1.jpg"
+    },
+    {
+      "courseId": 6,
+      "title": "Visual Studio Code",
+      "shortDescription": "Visual Studio Code is a fast and lightweight cross-platform code editor for writing modern web and cloud applications. This course shows you how to debug, refactor, peek and find references, get intellisense and autocomplete, use the multi-cursor, run task automation using Gulp or Grunt, and...",
+      "url": "https://www.pluralsight.com/courses/visual-studio-code",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/visual-studio-code-v1.jpg"
+    },
+    {
+      "courseId": 7,
+      "title": "Angularjs Get Started",
+      "shortDescription": "Hello! My name is Scott Allen, and welcome to AngularJS: Get Started. In this course, you will learn about the core features of the JavaScript framework using practical, easy to follow examples. You will get there by learning major topics like how two-way data binding makes it easy to build...",
+      "url": "https://www.pluralsight.com/courses/angularjs-get-started",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/angularjs-get-started-v1.jpg"
+    },
+    {
+      "courseId": 8,
+      "title": "Microservices Architecture",
+      "shortDescription": "Microservices architecture is a better way of implementing a service oriented architecture. After years of varying interpretations of a service oriented architecture, microservices is the conclusive design which provides all the advantages of the service oriented architecture approach. This...",
+      "url": "https://www.pluralsight.com/courses/microservices-architecture",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/microservices-architecture-v1.jpg"
+    },
+    {
+      "courseId": 9,
+      "title": "Object Oriented Programming Fundamentals In C",
+      "shortDescription": "This course takes you through the principles and practices of object-oriented programming (OOP). The course provides you with the firm foundation in OOP that you need to progress to intermediate-level C# courses. It begins by showing you how to turn a set of words into a set of well-defined and...",
+      "url": "https://www.pluralsight.com/courses/object-oriented-programming-fundamentals-csharp",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/object-oriented-programming-fundamentals-csharp-v2.png"
+    },
+    {
+      "courseId": 10,
+      "title": "Introduction To Mongodb",
+      "shortDescription": "MongoDB is a very popular open source NoSQL database. When scalability and speed are required, this database shines. It is a document database which imposes very little and has drivers for many programming languages. This course will teach you how to get mongo running, manipulate and query...",
+      "url": "https://www.pluralsight.com/courses/mongodb-introduction",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/mongodb-introduction-v1.jpg"
+    },
+    {
+      "courseId": 11,
+      "title": "Understanding Machine Learning With Python",
+      "shortDescription": "Hello! My name is Jerry Kurata, and welcome to Understanding Machine Learning with Python. In this course, you will gain an understanding of how to perform Machine Learning with Python. You will get there by covering major topics like how to format your problem to be solvable, how to prepare...",
+      "url": "https://www.pluralsight.com/courses/python-understanding-machine-learning",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/python-understanding-machine-learning-v1.jpg"
+    },
+    {
+      "courseId": 12,
+      "title": "Developing With Net On Microsoft Azure Getting Started",
+      "shortDescription": "Hello, and welcome to Developing with .NET on Microsoft Azure - Getting Started, part of the .NET Developer on Microsoft Azure Learning Path here at Pluralsight. My name is Scott Allen, and I'm looking forward to helping you understand the breadth of Azure resource offerings and supported...",
+      "url": "https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/developing-dotnet-microsoft-azure-getting-started-v1.jpg"
+    },
+    {
+      "courseId": 13,
+      "title": "Java Fundamentals The Core Platform",
+      "shortDescription": "Java is the most in-demand programming language skill amongst software developers, and one of the most important skills for big data specialists. This course, Java Fundamentals: The Core Platform, provides thorough coverage of the core Java platform, giving you the foundation you need to begin...",
+      "url": "https://www.pluralsight.com/courses/java-fundamentals-core-platform",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/java-fundamentals-core-platform-v1.jpg"
+    },
+    {
+      "courseId": 14,
+      "title": "Fundamentals Of Cloud Computing",
+      "shortDescription": "Talk about Cloud Computing has spread like a marketing virus. But what is cloud computing, really? How does it work? How can it help IT professionals and businesses of all sizes? In this course, Fundamentals of Cloud Computing, youlll learn the different forms of cloud computing, how they can...",
+      "url": "https://www.pluralsight.com/courses/cloud-computing-fundamentals",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/cloud-computing-fundamentals-v1.jpg"
+    },
+    {
+      "courseId": 15,
+      "title": "Pmi Acp Agile Development Quality And Testing Practices 6 Of 11",
+      "shortDescription": "Are you looking to further develop your Agile Project Management background to help you lead your team and project(s) with greater efficiency and effectiveness? In this course, PMI-ACP®: Agile Development, Quality, and Testing Practices, you will take the next step in becoming an Agile Project...",
+      "url": "https://www.pluralsight.com/courses/pmi-acp-agile-development-quality-testing-practices",
+      "imgUrl": "https://pluralsight.imgix.net/course-images/pmi-acp-agile-development-quality-testing-practices-v1.jpg"
     }
-]
+  ]
+  

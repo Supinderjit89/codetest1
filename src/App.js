@@ -10,6 +10,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import "./App.css";
 import { TextField } from "@material-ui/core";
 import data from "./dataItem.json";
+//import image from './image';
 
 class App extends Component {
   constructor(props) {
@@ -25,15 +26,14 @@ class App extends Component {
   handleChange(e) {
     this.setState({
       searchText: e.target.value.toLowerCase(),
-
     });
   }
 
   render() {
     const searchItems = this.Items.filter((b) =>
-      b.itemName.toLowerCase().includes(this.state.searchText)
+      b.title.toLowerCase().includes(this.state.searchText)
     );
-console.log(searchItems)
+    console.log(searchItems);
     return (
       <>
         <div className="App">
@@ -73,11 +73,19 @@ console.log(searchItems)
             </FormGroup>
           </div>
         </div>
-        <div className="cbGroup">
+        <div className="maingird">
           {searchItems.map((item) => (
-            <div  className="grid3" key={item.itemId}>
-              <p>{item.itemName}</p>
-              
+            <div className="grid3" key={item.courseId}>
+              <div className="title">
+                {" "}
+                <h4>
+                  <u>{item.title}</u>
+                </h4>
+              </div>
+              <div className="image">
+              <img src={item.imgUrl}  /></div>
+              <p>{item.shortDescription}</p>
+              <a href={item.url}>Link here....</a>
             </div>
           ))}
         </div>
