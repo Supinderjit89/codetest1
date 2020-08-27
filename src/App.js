@@ -49,6 +49,7 @@ class App extends Component {
               onChange={this.handleChange}
             />
             <SearchIcon height="20px" width="20px" />
+             <h5>Login or Sign Up</h5>
           </div>
         </div>
         <div className="cbGroup">
