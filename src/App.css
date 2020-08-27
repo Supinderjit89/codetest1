@@ -1,14 +1,14 @@
 .App {
-margin-left: 10%;
+
   background-color:lightgray;
-  width: 80%;
-  border-radius: 15px;
+  
+
   box-shadow:0 1px 2px grey, 0 2px 5px 0 gray;
   padding:20px;
   background: border-box;
   display: flex;
   flex-direction: row;
-  margin-top: 2%;
+  
   
 
 }
@@ -72,7 +72,7 @@ margin-left: 10%;
   padding:20px;
   background: border-box;
   display: flex;
-  margin-top: 2%;
+  margin-top: 1%;
 
 }
 .grid2{
@@ -94,8 +94,8 @@ margin-left: 10%;
   width: 82%;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap:50px 50px;
-  margin-top: 2%;
+  grid-gap:40px 40px;
+  margin-top: 1%;
  
 }
 .grid3{
@@ -105,7 +105,7 @@ margin-left: 10%;
   
   border-radius: 15px;
   box-shadow:0 1px 2px grey, 0 2px 5px 0 gray;
-  margin-top: 5%;
+  margin-top: 2%;
   padding:3%
 }
 .image{
@@ -125,4 +125,16 @@ p{
   
   height:7%;
   
+}
+
+
+/*footer*/
+.footer{
+  height:200px;
+  background-color:black;
+    box-shadow:0 1px 2px grey, 0 2px 5px 0 gray;
+  padding:20px;
+  display: flex;
+  margin-top: 2%;
+  opacity: .5;
 }

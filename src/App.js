@@ -38,7 +38,7 @@ class App extends Component {
       <>
         <div className="App">
           <div className="grid">
-            <h1>Hello world</h1>
+            <h1><u>Learn Web Development and Computer Fundamentals</u></h1>
           </div>
           <hr></hr>
           <div className="grid1">
@@ -83,12 +83,14 @@ class App extends Component {
                 </h4>
               </div>
               <div className="image">
-              <img src={item.imgUrl}  /></div>
+                <img src={item.imgUrl} />
+              </div>
               <p>{item.shortDescription}</p>
               <a href={item.url}>Link here....</a>
             </div>
           ))}
         </div>
+        <div className="footer"></div>
       </>
     );
   }
