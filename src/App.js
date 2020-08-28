@@ -12,7 +12,7 @@ import { TextField } from "@material-ui/core";
 import data from "./dataItem.json";
 //import image from './image';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
+import AdvdataItem from './advdataitem';
 
 
 class App extends Component {
@@ -22,6 +22,7 @@ class App extends Component {
       searchText: "",
       dataItem: [...data],
       searchItem: [],
+      openModal : false
     };
     this.handleChange = this.handleChange.bind(this);
     this.Items = [...data];
@@ -31,6 +32,8 @@ class App extends Component {
       searchText: e.target.value.toLowerCase(),
     });
   }
+
+ 
 
   render() {
     const searchItems = this.Items.filter((b) =>
@@ -56,7 +59,7 @@ class App extends Component {
               onChange={this.handleChange}
             />
             <SearchIcon height="20px" width="20px" /><br/>
-             <h7>Login or Sign Up</h7>
+             <h6>Login or Sign Up</h6>
           </div>
         </div>
         <div className="cbGroup">
@@ -91,39 +94,26 @@ class App extends Component {
                 </h6>
               </div>
               <div className="image">
-                <img src={item.imgUrl} />
+                <img src={item.imgUrl} alt=""/>
               </div>
               <p>{item.shortDescription}</p>
-              <a href={item.url} className="alink">Link here....</a>
+            <AdvdataItem title={item.title} id={item.courseId} rating={item.providerRatings}></AdvdataItem>
             </div>
           ))}
         </div>
         <div className="footer"></div>
 
+
+
+    
+
+
+ 
       
-  
-  <Button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</Button>
+    
 
   
-  <div className="modal fade" id="myModal" role="dialog">
-    <div className="modal-dialog">
-    
-      
-      <div className="modal-content">
-        <div className="modal-header">
-          <button type="button" className="close" data-dismiss="modal">&times;</button>
-          <h4 className="modal-title">Modal Header</h4>
-        </div>
-        <div className="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div className="modal-footer">
-          <Button type="button" className="btn btn-default" data-dismiss="modal">Close</Button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+ 
   
 
         
