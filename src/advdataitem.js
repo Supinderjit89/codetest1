@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 
 import { Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap4-modal';
+import "./App.css";
 
 
 class AdvdataItem extends Component{
@@ -48,8 +49,18 @@ class AdvdataItem extends Component{
          <h5 className="modal-title">{this.props.title}</h5>
         </div>
         <div className="modal-body">
-            <p>{this.props.id}</p>
-        <p>  {this.props.rating}</p>
+            <div className="left-grid">
+       <b> Duration Time:</b><br/> {this.props.duration} month 
+       <hr/>
+        <b> Rating:</b> {this.props.rating}
+        <hr/>
+         <b> Provider: </b>  {this.props.provider}
+         <hr/> 
+        <b> Category</b> :<br/>{this.props.category}
+        </div><div className="right-grid">
+            <p>{this.props.shortDescription}</p>
+            <a href={this.props.link}>Click Here..</a>
+        </div>
         </div>
         <div className="modal-footer">
          
