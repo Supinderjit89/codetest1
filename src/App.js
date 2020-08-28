@@ -13,6 +13,8 @@ import data from "./dataItem.json";
 //import image from './image';
 import "bootstrap/dist/css/bootstrap.min.css";
 import AdvdataItem from "./advdataitem";
+import Login from './login';
+
 
 class App extends Component {
   constructor(props) {
@@ -56,7 +58,7 @@ class App extends Component {
             />
             <SearchIcon height="20px" width="20px" />
             <br />
-            <h6>Login or Sign Up</h6>
+            <h6><Login/>or Sign Up</h6>
           </div>
         </div>
         <div className="cbGroup">
