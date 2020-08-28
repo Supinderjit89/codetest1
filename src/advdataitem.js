@@ -62,6 +62,20 @@ class AdvdataItem extends Component{
             <a href={this.props.link}>Click Here..</a>
         </div>
         </div>
+       
+        
+        <div className="bottom-grid">
+        
+       <b className="space"> level:</b>   {this.props.level}
+       
+        <b className="space"> medium:</b>   {this.props.medium}
+        
+         <b className="space"> language: </b>    {this.props.language}
+        
+        
+        
+
+        </div>
         <div className="modal-footer">
          
           <Button type="button" className="btn btn-primary" onClick={this.OpenModal}>
