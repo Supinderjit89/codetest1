@@ -1,21 +1,22 @@
 import React, { Component } from "react";
-import Checkbox from "@material-ui/core/Checkbox";
+//import Checkbox from "@material-ui/core/Checkbox";
 import SearchIcon from "@material-ui/icons/Search";
 //import FormLabel from '@material-ui/core/FormLabel';
 //import FormControl from '@material-ui/core/FormControl';
-import FormGroup from "@material-ui/core/FormGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
+//import FormGroup from "@material-ui/core/FormGroup";
+//import FormControlLabel from "@material-ui/core/FormControlLabel";
 //import FormHelperText from '@material-ui/core/FormHelperText';
-
+import { Form } from "react-bootstrap";
 import "./App.css";
 import { TextField } from "@material-ui/core";
 import data from "./dataItem.json";
 //import image from './image';
 import "bootstrap/dist/css/bootstrap.min.css";
 import AdvdataItem from "./advdataitem";
-import Login from './login';
-import SignUp from './signup';
-
+import Login from "./login";
+import SignUp from "./signup";
+//import Checkboxes from'./checkbox';
+import checkboxes from "./checkbox";
 
 class App extends Component {
   constructor(props) {
@@ -29,14 +30,19 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.Items = [...data];
   }
+
+  //Search handled
   handleChange(e) {
     this.setState({
       searchText: e.target.value.toLowerCase(),
     });
   }
 
+  //Checkbox handle
+  
+
   render() {
-    const searchItems = this.Items.filter((b) =>
+    var searchItems = this.Items.filter((b) =>
       b.title.toLowerCase().includes(this.state.searchText)
     );
     console.log(searchItems);
@@ -59,31 +65,22 @@ class App extends Component {
             />
             <SearchIcon height="20px" width="20px" />
             <br />
-            <br/>
-            <Login/><SignUp/>
+            <br />
+            <Login />
+            <SignUp />
           </div>
         </div>
         <div className="cbGroup">
-          <div className="grid2">
-            <FormGroup>
-              <FormControlLabel
-                control={<Checkbox name="gilad" />}
-                label="Aws"
-              />
-              <FormControlLabel
-                control={<Checkbox name="gilad" />}
-                label="Machine learning"
-              />
-              <FormControlLabel
-                control={<Checkbox name="gilad" />}
-                label="Core-Java "
-              />
-              <FormControlLabel
-                control={<Checkbox name="gilad" />}
-                label="Angular-js"
-              />
-            </FormGroup>
-          </div>
+          {checkboxes.map((item) => (
+            <div className="grid2">
+              <Form.Group controlId="formBasicCheckbox">
+                <Form.Check type="checkbox" label={item.name} 
+                
+                onClick={this.handlechanged}
+                />
+              </Form.Group>
+            </div>
+          ))}
         </div>
         <div className="maingird">
           {searchItems.map((item) => (
