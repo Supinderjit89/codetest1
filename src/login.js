@@ -41,10 +41,10 @@ class Login extends Component {
           visible={this.state.openModal}
           onClickBackdrop={this.modalBackdropClicked}
         >
-          <div className="modal-header">
+         <div className="modal-header">
             <h5 className="login-title"> User Login</h5>
           </div>
-<div className="mainlogin">
+         <div className="mainlogin">
           <div className="loginimg">
           <img src="/image/loginimg.png" alt="loginimage" className="imagesize"/>
               

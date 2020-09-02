@@ -1,20 +1,9 @@
-
 import React, { Component } from "react";
 
-import { Button } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import Modal from "react-bootstrap4-modal";
 import "./App.css";
-import {
-  TextField,
-  FormControlLabel,
-  Checkbox,
-} from "@material-ui/core";
-
-
-
-
-
-
+//import { TextField, FormControlLabel, Checkbox } from "@material-ui/core";
 
 class SignUp extends Component {
   constructor(props) {
@@ -31,8 +20,6 @@ class SignUp extends Component {
   };
 
   render() {
-    
-
     return (
       <>
         <Button onClick={this.OpenModal} variant="link">
@@ -43,64 +30,44 @@ class SignUp extends Component {
           onClickBackdrop={this.modalBackdropClicked}
         >
           <div className="modal-header">
-            <h5 className="login-title"> User Login</h5>
+            <h5 className="login-title"> Create new Login</h5>
           </div>
-<div className="mainlogin">
-          <div className="loginimg">
-          <img src="/image/loginimg.png" alt="loginimage" className="imagesize"/>
+          <Form>
+          <div className="mainlogin">
+            
+            <div className="signup-grid">
               
-          </div>
-            <div className="login-grid">
-            
-              <TextField
-                id="username"
-                label="Username"
-                type="email"
+            <div className="form-group">
+                    <label>First name</label>
+                    <input type="text" className="form-control" placeholder="First name" />
+                </div>
+
+                <div className="form-group">
+                    <label>Last name</label>
+                    <input type="text" className="form-control" placeholder="Last name" />
+                </div>
+
+                <div className="form-group">
+                    <label>Email address</label>
+                    <input type="email" className="form-control" placeholder="Enter email" />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="password" className="form-control" placeholder="Enter password" />
+                </div>
+
                 
-                
-                
-                required
-              />
-             
-              <TextField
-                id="username"
-                label="Password"
-                type="password"
-            
-                required
-              />
-              <FormControlLabel
-                control={<Checkbox color="primary" />}
-                label="Remember me"
-              />
-              <Button
-                disableFocusRipple
-                disableRipple
-                style={{ textTransform: "none" }}
-                variant="text"
-                color="primary"
-              >
-                Forgot password ?
-              </Button>
+              
             </div>
-          
-</div>
-          <div className="modal-footer">
-            <Button
-              type="button"
-              className="btn btn-primary"
-              onClick={this.OpenModal}
-            >
-              Cancel
-            </Button>
-            <Button
-              type="button"
-              className="btn btn-primary"
-          
-            >
-              Login
-            </Button>
           </div>
+          <div className="modal-footer">
+          <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                <p className="forgot-password text-right">
+                    Already registered <a href="./login.js">sign in?</a>
+                </p>
+          </div>
+          </Form>
         </Modal>
       </>
     );
