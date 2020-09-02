@@ -127,7 +127,7 @@ p{
 .title{
   
   height:80px;
-  width:325px;
+  width:100%;
   background-color: lavender;
  
    padding: 5%;
@@ -180,4 +180,35 @@ p{
 }
 .space{
   padding-left:5%
+}
+.login-grid{
+  margin-left:30%;
+  width:60%;
+  margin-top: 1%;
+  padding:1%
+
+}
+.loginimg{
+  
+    border-radius: 50%;
+    background-color:lightgray;
+    height:120px;
+    width:120px;
+    margin-left:35%;
+    margin-top:2%
+    
+    
+
+}
+.mainlogin{
+  height:350px
+}
+.imagesize{
+  width:100px;
+  margin-top:10px;
+  margin-left:10px
+  
+}
+.modal-title{
+  margin-left:35% 
 }

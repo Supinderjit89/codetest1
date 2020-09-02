@@ -12,6 +12,9 @@ import {
 
 
 
+
+
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -39,26 +42,30 @@ class Login extends Component {
           onClickBackdrop={this.modalBackdropClicked}
         >
           <div className="modal-header">
-            <h5 className="modal-title">Login</h5>
+            <h5 className="modal-title"> User Login</h5>
           </div>
-
-          
-            <div className="gird">
-              Username:
+<div className="mainlogin">
+          <div className="loginimg">
+          <img src="/image/loginimg.png" alt="loginimage" className="imagesize"/>
+              
+          </div>
+            <div className="login-grid">
+            
               <TextField
                 id="username"
                 label="Username"
                 type="email"
-                fullWidth
-                autoFocus
+                
+                
+                
                 required
               />
-              Password:
+             
               <TextField
                 id="username"
                 label="Password"
                 type="password"
-                fullWidth
+            
                 required
               />
               <FormControlLabel
@@ -76,12 +83,19 @@ class Login extends Component {
               </Button>
             </div>
           
-
+</div>
           <div className="modal-footer">
             <Button
               type="button"
               className="btn btn-primary"
               onClick={this.OpenModal}
+            >
+              Cancel
+            </Button>
+            <Button
+              type="button"
+              className="btn btn-primary"
+          
             >
               Login
             </Button>
