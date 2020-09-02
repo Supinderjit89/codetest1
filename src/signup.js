@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 
 import { Button } from "react-bootstrap";
@@ -15,7 +16,7 @@ import {
 
 
 
-class Login extends Component {
+class SignUp extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +36,7 @@ class Login extends Component {
     return (
       <>
         <Button onClick={this.OpenModal} variant="link">
-          Login
+          Sign up
         </Button>
         <Modal
           visible={this.state.openModal}
@@ -106,4 +107,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default SignUp;

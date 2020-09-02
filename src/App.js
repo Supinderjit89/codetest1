@@ -14,6 +14,7 @@ import data from "./dataItem.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AdvdataItem from "./advdataitem";
 import Login from './login';
+import SignUp from './signup';
 
 
 class App extends Component {
@@ -58,7 +59,8 @@ class App extends Component {
             />
             <SearchIcon height="20px" width="20px" />
             <br />
-            <h6><Login/>or Sign Up</h6>
+            <br/>
+            <Login/><SignUp/>
           </div>
         </div>
         <div className="cbGroup">
