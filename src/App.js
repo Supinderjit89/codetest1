@@ -26,6 +26,7 @@ class App extends Component {
       dataItem: [...data],
       searchItem: [],
       openModal: false,
+
     };
     this.handleChange = this.handleChange.bind(this);
     this.Items = [...data];
@@ -39,13 +40,19 @@ class App extends Component {
   }
 
   //Checkbox handle
-  
+  handlechanged(event){
+    this.setState({
+checkBoxes : event.target.name
+    })
+  }
 
   render() {
-    var searchItems = this.Items.filter((b) =>
+    const searchItems = this.Items.filter((b) =>
       b.title.toLowerCase().includes(this.state.searchText)
     );
-    console.log(searchItems);
+    
+
+    
 
     return (
       <>
@@ -75,7 +82,7 @@ class App extends Component {
             <div className="grid2">
               <Form.Group controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label={item.name} 
-                
+                name={item.name}
                 onClick={this.handlechanged}
                 />
               </Form.Group>
